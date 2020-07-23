@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input</title>
+</head>
+<body>
+<button id="osname">OSName</button>
+<button id="version">Version</button>
+<p>
+Your OS Name is <span id="outputOSName"></span> and version is <span id="outputVersion"></span>.
+</p>
+<script>
+document.getElementById("osname").onclick = function(){
+	var osname = prompt("Enter your osname");
+  document.getElementById("outputOSName").innerText = osname;
+}
+
+document.getElementById("version").onclick = function(){
+	var version  = prompt("Enter your version");
+  document.getElementById("outputVersion").innerText = version;
+}
+</script>
+</body>
+</html>
